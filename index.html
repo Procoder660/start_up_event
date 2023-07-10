@@ -6,7 +6,7 @@
     body {
       background-image: url('image.jpg');
       background-size: cover;
-      background-position: center;
+      background-position: over;
       font-family: Arial, sans-serif;
       color: #ff0000;
       text-align: center;
@@ -14,67 +14,58 @@
       background-attachment: fixed;
       background-size: cover;
     }
+    
 
     h1 {
-      font-size: 36px;
+      font-size: 48px;
       font-weight: bold;
-      margin-top: 50px;
-      margin-bottom: 20px;
+      margin-top: 100px;
       color: rgb(47, 0, 255);
+      background-color: rgb(250, 191, 201);
+      display: inline;
     }
-
+   
     .timer {
+      
       color: rgb(2, 167, 250);
       font-size: 24px;
-      margin-bottom: 20px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     .notice {
       background-color: yellow;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      padding: 10px;
+      margin-top: 50px;
       font-size: 18px;
     }
 
     .coupon-code {
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin-top: 50px;
     }
 
     .coupon-code input[type="text"] {
-      padding: 10px;
-      font-size: 18px;
+      padding: 5px;
     }
 
     .coupon-code input[type="button"] {
-      padding: 10px 20px;
-      font-size: 18px;
+      padding: 5px 10px;
     }
 
     .registration-fee {
       margin-top: 20px;
-      margin-bottom: 20px;
       font-size: 24px;
     }
 
     .register-button {
-      margin-bottom: 50px;
-    }
-
-    .register-button button {
-      background-color: green;
+        background-color: green;
       color: white;
-      padding: 10px 20px;
+      padding: 10px;
       text-decoration: none;
       display: inline-block;
-      font-size: 24px;
-      border: none;
     }
   </style>
 </head>
 <body>
-  <h1><b>Big College Startup Event</b></h1>
+  <h1><b>* Big College Startup Event *</b></h1>
   <div id="timer" class="timer"></div>
   <script>
     var minutes = 10;
@@ -108,10 +99,10 @@
     <input type="button" value="Activate" onclick="activateCoupon()">
   </div>
   <div class="registration-fee">
-    <p><b><u>Registration fee:</u></b> <span id="fee"><font color="green"><b>INR 999</b></font></span></p>
+    <p><b><u>Registration fee:</u> </b><span id="fee"><font color ="green"><b>INR 999</b></font></span></p>
   </div>
   <div class="register-button">
-    <button onclick="register()"><b>Register</b></button>
+    <button onclick="register()"><B>Register</B></button>
   </div>
   <script>
     function activateCoupon() {
