@@ -6,7 +6,7 @@
     body {
       background-image: url('image.jpg');
       background-size: cover;
-      background-position: over;
+      background-position: center;
       font-family: Arial, sans-serif;
       color: #ff0000;
       text-align: center;
@@ -14,58 +14,67 @@
       background-attachment: fixed;
       background-size: cover;
     }
-    
 
     h1 {
-      font-size: 48px;
+      font-size: 36px;
       font-weight: bold;
-      margin-top: 100px;
+      margin-top: 50px;
+      margin-bottom: 20px;
       color: rgb(47, 0, 255);
-      background-color: rgb(250, 191, 201);
-      display: inline;
     }
-   
+
     .timer {
-      
       color: rgb(2, 167, 250);
       font-size: 24px;
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      margin-bottom: 20px;
     }
 
     .notice {
       background-color: yellow;
-      margin-top: 50px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 10px;
       font-size: 18px;
     }
 
     .coupon-code {
-      margin-top: 50px;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
 
     .coupon-code input[type="text"] {
-      padding: 5px;
+      padding: 10px;
+      font-size: 18px;
     }
 
     .coupon-code input[type="button"] {
-      padding: 5px 10px;
+      padding: 10px 20px;
+      font-size: 18px;
     }
 
     .registration-fee {
       margin-top: 20px;
+      margin-bottom: 20px;
       font-size: 24px;
     }
 
     .register-button {
-        background-color: green;
+      margin-bottom: 50px;
+    }
+
+    .register-button button {
+      background-color: green;
       color: white;
-      padding: 10px;
+      padding: 10px 20px;
       text-decoration: none;
       display: inline-block;
+      font-size: 24px;
+      border: none;
     }
   </style>
 </head>
 <body>
-  <h1><b>* Big College Startup Event *</b></h1>
+  <h1><b>Big College Startup Event</b></h1>
   <div id="timer" class="timer"></div>
   <script>
     var minutes = 10;
@@ -99,10 +108,10 @@
     <input type="button" value="Activate" onclick="activateCoupon()">
   </div>
   <div class="registration-fee">
-    <p><b><u>Registration fee:</u> </b><span id="fee"><font color ="green"><b>INR 999</b></font></span></p>
+    <p><b><u>Registration fee:</u></b> <span id="fee"><font color="green"><b>INR 999</b></font></span></p>
   </div>
   <div class="register-button">
-    <button onclick="register()"><B>Register</B></button>
+    <button onclick="register()"><b>Register</b></button>
   </div>
   <script>
     function activateCoupon() {
@@ -123,9 +132,4 @@
       if (fee === "0") {
         window.location.href = "https://surveyheart.com/form/64a7fdae3d6e585e545b2f4e";
       } else {
-        alert("Please pay 999 rupees or use a coupon code.");
-      }
-    }
-  </script>
-</body>
-</html>
+       
